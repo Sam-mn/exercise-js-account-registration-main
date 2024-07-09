@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #1c4e8b;
+}
+
+.mainDiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.inputsForm {
+  background-color: #fff;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.inputsForm input {
+  width: 90%;
+  height: 3rem;
+  font-size: 1.3rem;
+}
+
+.inputsForm label {
+  width: 90%;
+  margin-top: 0.8rem;
+}
+
+.inputsForm input:focus-visible {
+  outline: none;
+  border-color: #000;
+}
+
+.inputsForm button {
+  width: 90%;
+  padding: 1rem;
+  background-color: #377d21;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
+
+.inputsForm button:disabled,
+.inputsForm button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.PasswordFail,
+.confirmPasswordFail {
+  display: none;
+  color: red;
+}
+
+.inputRedBorder {
+  border: 1px solid red;
+}

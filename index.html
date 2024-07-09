@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Account Registration</title>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <h1>Register your account</h1>
+      <form class="inputsForm">
+        <label for="name" onclick="focusOnInput('name')">Name</label>
+        <input type="text" id="name" required />
+
+        <label for="username" onclick="focusOnInput('userName')"
+          >Username</label
+        >
+        <input type="text" id="username" required />
+
+        <label for="email" onclick="focusOnInput('email')">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="password" onclick="focusOnInput('password')"
+          >Password</label
+        >
+        <input type="password" id="password" required />
+
+        <label for="confirmPassword" onclick="focusOnInput('confirmPassword')"
+          >Confirm Password</label
+        >
+        <input type="password" id="confirmPassword" required />
+
+        <button type="submit" class="button">Sign up</button>
+        <p class="PasswordFail">
+          The password must be at least 8 characters long.
+        </p>
+        <p class="confirmPasswordFail">The passwords doesn't match.</p>
+      </form>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
